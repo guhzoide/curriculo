@@ -1,0 +1,59 @@
+body {
+    line-height: 1;
+    font-family: 'Space Grotesk', sans-serif;
+    min-height: 100vh;
+    background-color: rgb(226, 225, 252);
+    /* background-image: url('../static/images/background_mod.jpg'); */
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+h1, h2, h3{
+    color: black;
+    text-align: center;
+}
+
+a {
+    padding: 5px;
+    font-size: 17px;
+    text-align: right;
+    color: black;
+}
+
+a:hover {
+    color: grey;
+}
+
+.discricao {
+    width: 1000px;
+    padding: 10px;
+    margin: auto;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.container_cabecalho {
+    display: flex;
+}
+
+.container_opcoes {
+    text-align: right;
+    justify-content: right;
+}
+
+.container_projetos {
+    display: flex;
+    justify-content: center;   
+}
+
+.projeto_suporte_titulo, .projeto_reconhecimento_facil_titulo {
+    color: black;
+    text-align: left;
+}
+
+.projeto_suporte, .projeto_reconhecimento_facil {
+    text-align: center;
+    justify-content: center;
+    margin: auto;
+}
