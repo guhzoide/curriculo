@@ -9,34 +9,51 @@
 </head>
 <body>
     <main class="principal">
-        <div class="container_opcoes">
-            <a href="/objetivo">Objetivo profissional</a>
-            <a href="/experiencia">Experiência profissional</a>
-            <a href="/formacao">Formação</a>
-            <a href="/cursos">Cursos</a>
-            <a href="/qualificacoes">Qualificações</a>
-            <a href="/contato">Contatos</a>
+        <div class="descricao">
+            <h1>Olá, me chamo Hugo e seja bem vindo ao meu curriculo</h1>
         </div>
         <hr>
-        <div class="discricao">
-            <h1>Olá, me chamo Hugo e seja bem vindo ao meu curriculo</h1>
-            <h2>Sinta-se a vontate para dar uma olhada nas opção a baixo</h2>
+        <div class="container">
+            <div class="sobre">
+                <h2>Sobre mim:</h2>
+                <div class="texto_sobre">
+                    <p>Sou um programador apaixonado por python e suas frameworks, nos dias atuais estous estudando e me perfeisualizando com flask criando projetos para solucionar problemas que me são apresentados, mas também já criei aplicativos para desktop utilizando as ferramentes Kivy e PySimpleGUI</p>
+                    <p>Conforme fui avançando com meus estudos fui aprendendo cada vez mais sobre banco de dados, configurando bancos, criando tabelas e utlizando as funções <a href="https://coodesh.com/blog/dicionario/o-que-e-crud/" target="_blank">CRUD</a> em meus projetos</p>
+                    <p>Busquei também estudar diferentes plataformas o que me levou a conhecer Linux e suas distribuições, hoje estou bem familiarizado com distribuições baseados em Debian, como por exemplo<a href="https://ubuntu.com/desktop" target="_blank">Ubuntu/Ubuntu Server</a>/, <a href="https://pop.system76.com/" target="_blank">Pop_Os</a> e <a href="https://linuxmint.com/" target="_blank">Mint</a></p>
+                    <p>Isso foi um pouco sobre mim e meu conhecimento proficional, de mais uma olhada para conhecer alguns dos meus projetos</p>
+                </div>
+            </div>
+            <div class="formacao">
+                <h2>Formação:</h2>
+                <div class="texto_formacao">
+                    <ul>
+                        <li>Ensino médio completo.</li>
+                        <li>Ensino superior completo: Bacharelado Sistemas da Informação.</li>
+                        <li>Informática básica e intermediária</li>
+                        <li>Montagens e desmontagens de notebook.</li>
+                    </ul>
+                </div>
+            </div>
         </div>
 
-        <hr>
-        <h3>Segue alguns projetos que fiz</h3>
-        <hr>
-        <div class="container_projetos">
-            <div clas="projeto_suporte">
-                <h4 class="projeto_suporte_titulo">Suporte Balaroti</h4>
-                <img src="../static/images/home_reduzido.png" alt="Projeto suporte" class="home">
-            </div>
-            <div class="projeto_reconhecimento_facil">
-                <div>
-                    <h4 class="projeto_reconhecimento_facil_titulo">Reconhecimento facial</h4>
+        <div class="projetos">
+            <h2>Projetos:</h2>
+            <div class="container_projetos">
+                <div clas="projeto_suporte">
+                    <img src="../static/images/home_reduzido.png" alt="Projeto suporte" class="home">
+                    <div class="balarotigpt"><a href="/suporte_balaroti">Suporte Balaroti</a></div>
                 </div>
-                <img src="../static/images/menu_faceid_mod.png" alt="">
+                <div class="projeto_reconhecimento_facil">
+                    <img src="../static/images/menu_faceid_mod.png" alt="">
+                    <div class="faceid"><a href="/faceid">Reconhecimento facial</a></div>
+                </div>
             </div>
+        </div>
+
+        <div class="contato">
+            <h2>Contatos:</h2>
+            <a href="https://wa.me/5541997590194" class="whats" target="_blank">Whatsapp</a>
+            <a href="mailto:hugorobertiferreira61.br@gmail.com?subject=Contato através do curriculo online" target="_blank" class="gmail">Gmail</a>
         </div>
     </main>
 </body>

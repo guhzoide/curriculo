@@ -1,59 +1,116 @@
+@import url('https://fonts.cdnfonts.com/css/oblivian-text');
+
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+    
+}
+
 body {
+    font-family: 'Oblivian Text', sans-serif;
     line-height: 1;
-    font-family: 'Space Grotesk', sans-serif;
     min-height: 100vh;
-    background-color: rgb(226, 225, 252);
+    background-color: rgb(33, 33, 33);
     /* background-image: url('../static/images/background_mod.jpg'); */
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
 }
 
-h1, h2, h3{
-    color: black;
+hr {
+    color: grey;
+}
+
+h1, h3{
+    color: white;
     text-align: center;
+}
+
+h2 {
+    color: white;
+    font-size: 30px;
 }
 
 a {
     padding: 5px;
-    font-size: 17px;
+    font-size: 25px;
     text-align: right;
-    color: black;
+    color: white;
 }
 
 a:hover {
     color: grey;
 }
 
-.discricao {
-    width: 1000px;
-    padding: 10px;
+.sobre, .formacao {
+    color: white;
+    font-size: 25px;
+    width: 750px;
+    padding: 50px;
+    background-color: rgba(0, 0, 0, 0.248);
+    border-radius: 10px;
+    margin: 20px;
+}  
+
+.container {
+    display: flex;
+    margin: 20px;   
+}
+
+.descricao {
+    font-size: larger;
+    font-size: 25px;
+    padding: 50px;
     margin: auto;
     border-radius: 10px;
     text-align: center;
 }
 
-.container_cabecalho {
-    display: flex;
-}
-
-.container_opcoes {
-    text-align: right;
-    justify-content: right;
-}
-
 .container_projetos {
     display: flex;
-    justify-content: center;   
-}
-
-.projeto_suporte_titulo, .projeto_reconhecimento_facil_titulo {
-    color: black;
-    text-align: left;
+    justify-content: center; 
+    padding: 50px;  
 }
 
 .projeto_suporte, .projeto_reconhecimento_facil {
-    text-align: center;
     justify-content: center;
     margin: auto;
+}
+
+.faceid, .balarotigpt {
+    padding: 10px;
+}
+
+.projetos {
+    background-color: rgba(0, 0, 0, 0.248);
+    border-radius: 10px;
+    text-align: center;
+    margin: 20px;
+    padding: 20px;
+}
+
+.contato {
+    color: white;
+    font-size: 25px;
+    width: 1750px;
+    padding: 50px;
+    background-color: rgba(0, 0, 0, 0.248);
+    border-radius: 10px;
+    margin: 20px;
+    text-align: center;
+}
+
+.whats {
+    background-color: green;
+    font-size: 25px;
+    border-radius: 10px;
+    padding: 15px;
+}
+
+.gmail {
+    background-color: brown;
+    font-size: 25px;
+    border-radius: 10px;
+    padding: 15px;   
 }
