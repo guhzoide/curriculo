@@ -1,0 +1,273 @@
+@import url('https://fonts.cdnfonts.com/css/oblivian-text');
+
+html, body {
+    box-sizing: border-box;
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Oblivian Text', sans-serif;
+    line-height: 1;
+    min-height: 100vh;
+    background-color: rgb(33, 33, 33);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+h1{
+    color: white;
+    text-align: center;
+    font-size: 70px;
+}
+
+h2, h3 {
+    color: white;
+    font-size: 25px;
+}
+
+a {
+    padding: 5px;
+    font-size: 25px;
+    text-align: right;
+    color: white;
+}
+
+a:hover {
+    color: grey;
+}
+
+p, .texto_formacao {
+    color: white;
+    font-size: 25px;
+    width: 700px;
+}
+
+.nome {
+    color: rgb(255, 75, 75);
+}
+
+.sobre, .formacao {
+    color: white;
+    font-size: 25px;
+    width: 1750px;
+    padding: 50px;
+    background-color: rgba(0, 0, 0, 0.474);
+    border-radius: 10px;
+    margin: 20px;
+}  
+
+.tecnologias_sistemas {
+    text-align: center;
+    padding: 50px;
+}
+
+.container {
+    display: flex;
+}
+
+.descricao {
+    font-size: larger;
+    font-size: 25px;
+    padding: 50px;
+    margin: auto;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.flask {
+    background-color: white;
+}
+
+.python {
+    width: 250px;
+}
+
+.flask, .git, .html, .css, .github_formacao, .postgresql {
+    width: 100px;
+    padding: 10px;
+}
+
+.container_projetos {
+    display: flex;
+    justify-content: space-between;
+}
+
+.projeto_suporte {
+    justify-content: center;
+}
+
+.projeto_reconhecimento_facil {
+    justify-content: center;
+}
+
+.projetos {
+    background-color: rgba(0, 0, 0, 0.474);
+    border-radius: 10px;
+    justify-content: center;
+    text-align: center;
+    padding: 20px;
+}
+
+
+.contato {
+    color: white;
+    font-size: 25px;
+    background-color: rgba(0, 0, 0, 0.474);
+    border-radius: 10px;
+    padding: 10px;
+    text-align: center;
+}
+
+.github, .whats, .gmail, .linkedin {
+    width: 45px;
+    padding: 10px;
+}
+
+
+@media screen and (max-width: 1366px) {
+    body {
+        display: flex;
+        flex-direction: column;
+    }
+
+    h1 {
+        font-size: 70px;
+    }
+
+    h2, h3 {
+        /* text-align: center; */
+        font-size: 50px;
+    }
+
+    a {
+        padding: 5px;
+        font-size: 45px;
+        color: white;
+    }
+
+    p, .texto_formacao {
+        font-size: 45px;
+    }
+
+    .container {
+        display: block;
+    }
+
+    .sobre, .formacao {
+        color: white;
+        font-size: 20px;
+        width: 955px;
+        background-color: rgba(0, 0, 0, 0.474);
+        border-radius: 10px;
+    }  
+
+    .projetos {
+        background-color: rgba(0, 0, 0, 0.474);
+        border-radius: 10px;
+    }
+
+    .container_projetos {
+        display: block;
+        text-align: left;
+        
+    }
+
+    .contato {
+        color: white;
+        font-size: 25px;
+        background-color: rgba(0, 0, 0, 0.474);
+        border-radius: 10px;
+        padding: 10px;
+    }
+    
+    .github, .whats, .gmail, .linkedin {
+        width: 90px;
+        padding: 10px;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    body {
+        display: flex;
+        flex-direction: column;
+        border: none;
+    }
+
+    main {
+        margin: 0;
+    }
+
+    h1 {
+        font-size: 50px;
+    }
+
+    h3, h2 {
+        text-align: center;
+        font-size: 40px;
+    }
+
+    a {
+        padding: 5px;
+        font-size: 20px;
+        text-align: center;
+        color: white;
+    }
+
+    p, .texto_formacao {
+        font-size: 20px;
+        width: 250px;
+    }
+
+    .container {
+        display: block;
+    }
+
+    .sobre, .formacao {
+        color: white;
+        font-size: 20px;
+        width: 230px;
+        background-color: rgba(0, 0, 0, 0.474);
+        border-radius: 10px;
+    }  
+
+    .projetos {
+        background-color: rgba(0, 0, 0, 0.474);
+        border-radius: 10px;
+        justify-content: center;
+        width: 325px;
+    }
+
+    .container_projetos {
+        display: block;
+        text-align: left;
+    }
+
+    .projeto_suporte {
+        justify-content: center;
+    }
+    
+    .projeto_reconhecimento_facil {
+        justify-content: center;
+    }
+
+    .suporte_balaroti, .faceid {
+        width: 320px;
+    }
+
+    .contato {
+        color: white;
+        font-size: 25px;
+        width: 350px;
+        background-color: rgba(0, 0, 0, 0.474);
+        border-radius: 10px;
+        padding: 10px;
+        text-align: center;
+    }
+    
+    .github, .whats, .gmail, .linkedin {
+        width: 45px;
+        padding: 10px;
+    }
+}
