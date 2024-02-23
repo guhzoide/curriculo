@@ -80,11 +80,7 @@ p, .texto_formacao {
     background-color: white;
 }
 
-.python {
-    width: 250px;
-}
-
-.flask, .git, .html, .css, .github_formacao, .postgresql {
+.flask, .git, .html, .css, .github_formacao, .postgresql, .linux, .python {
     width: 100px;
     padding: 10px;
 }
