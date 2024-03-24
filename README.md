@@ -10,6 +10,6 @@
 
 # IMAGENS
 
-<img align="center" alt="Hugo-Shell" height="30" width="40" src="https://github.com/guhzoide/corriculo/project_images/curriculo.png">
-<img align="center" alt="Hugo-Shell" height="30" width="40" src="https://github.com/guhzoide/corriculo/project_images/curriculo2.png">
-<img align="center" alt="Hugo-Shell" height="30" width="40" src="https://github.com/guhzoide/corriculo/project_images/curriculo3.png">
+<img align="center" alt="Hugo-Shell" height="30" width="40" src="https://github.com/guhzoide/corriculo/tree/master/project_images/curriculo.png">
+<img align="center" alt="Hugo-Shell" height="30" width="40" src="https://github.com/guhzoide/corriculo/tree/master/project_imagescurriculo2.png">
+<img align="center" alt="Hugo-Shell" height="30" width="40" src="https://github.com/guhzoide/corriculo/tree/master/project_imagescurriculo3.png">
