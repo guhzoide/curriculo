@@ -14,6 +14,7 @@ body {
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
+    margin: auto;
 }
 
 h1{
@@ -48,23 +49,33 @@ p, .texto_formacao {
     color: rgb(255, 75, 75);
 }
 
-.sobre, .formacao {
+.sobre {
+    display: flex;
+    justify-content: space-between;
     color: white;
     font-size: 25px;
     width: 1750px;
     padding: 50px;
     background-color: rgba(0, 0, 0, 0.474);
     border-radius: 10px;
-    margin: 20px;
-}  
+    margin: auto;
+}
+
+.texto_sobre, .texto_formacao{
+    padding: 10px;
+}
 
 .tecnologias_sistemas {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
     text-align: center;
     padding: 50px;
 }
 
-.container {
+.container_informacoes {
     display: flex;
+    padding: 10px;
 }
 
 .descricao {
@@ -76,32 +87,31 @@ p, .texto_formacao {
     text-align: center;
 }
 
-.flask {
-    background-color: white;
-}
-
-.flask, .git, .html, .css, .github_formacao, .postgresql, .linux, .python {
+.logo_tec_sis {
     width: 100px;
     padding: 10px;
 }
 
 .container_projetos {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
 }
 
-.projeto_suporte {
+.projeto_suporte, .projeto_mdb, .projeto_curriculo, .projeto_reconhecimento_facil {
     justify-content: center;
 }
 
-.projeto_reconhecimento_facil {
-    justify-content: center;
+.imagem_projeto {
+    width: 600px;
 }
 
 .projetos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
     background-color: rgba(0, 0, 0, 0.474);
     border-radius: 10px;
-    justify-content: center;
     text-align: center;
     padding: 20px;
 }
@@ -147,11 +157,9 @@ p, .texto_formacao {
         font-size: 45px;
     }
 
-    .container {
-        display: block;
-    }
-
-    .sobre, .formacao {
+    .sobre {
+        display: flex;
+        flex-direction: column;
         color: white;
         font-size: 20px;
         width: 955px;
@@ -162,12 +170,13 @@ p, .texto_formacao {
     .projetos {
         background-color: rgba(0, 0, 0, 0.474);
         border-radius: 10px;
+        padding: 20px;
+        margin: auto;
     }
 
     .container_projetos {
         display: block;
         text-align: left;
-        
     }
 
     .contato {
@@ -188,7 +197,6 @@ p, .texto_formacao {
     body {
         display: flex;
         flex-direction: column;
-        border: none;
     }
 
     main {
@@ -236,19 +244,10 @@ p, .texto_formacao {
     }
 
     .container_projetos {
-        display: block;
         text-align: left;
     }
 
-    .projeto_suporte {
-        justify-content: center;
-    }
-    
-    .projeto_reconhecimento_facil {
-        justify-content: center;
-    }
-
-    .suporte_balaroti, .faceid {
+    .imagem_projeto {
         width: 320px;
     }
 
@@ -260,6 +259,7 @@ p, .texto_formacao {
         border-radius: 10px;
         padding: 10px;
         text-align: center;
+        margin: auto;
     }
     
     .github, .whats, .gmail, .linkedin {

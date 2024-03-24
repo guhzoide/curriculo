@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, max-scale=1.0">
     <link rel="stylesheet" href="../static/index.css">
-    <link rel="shortcut icon" href="../static/assets/favicon.png" type="image/x-icon">
+    <link rel="shortcut icon" href="../static/fav/favicon.png" type="image/x-icon">
     <title>Currículo</title>
 </head>
 <body>
@@ -14,39 +14,27 @@
             <h1>Seja bem vindo ao meu currículo.</h1>
         </div>
         <hr>
-        <div class="container">
+        <div class="container_informacoes">
             <div class="sobre">
-                <h2>Sobre mim:</h2>
                 <div class="texto_sobre">
-                    <p>Sou um programador apaixonado por python e suas frameworks, nos dias atuais estou estudando e me aperfeiçoando com flask criando projetos para solucionar problemas que me são apresentados, mas também já criei aplicativos para desktop utilizando as ferramentas Kivy e PySimpleGUI</p>
+                    <h2>Sobre mim:</h2>
+                    <p>Sou um programador apaixonado por python e suas frameworks, nos dias atuais estou estudando e me aperfeiçoando com Django criando projetos para solucionar problemas que me são apresentados, mas também já criei aplicativos para desktop utilizando as ferramentas Kivy e PySimpleGUI</p>
                     <p>Conforme fui avançando com meus estudos fui aprendendo cada vez mais sobre banco de dados, configurando bancos, criando tabelas e utilizando as funções <a href="https://coodesh.com/blog/dicionario/o-que-e-crud/" target="_blank">CRUD</a> em meus projetos</p>
                     <p>Busquei também estudar diferentes plataformas o que me levou a conhecer Linux e suas distribuições, hoje estou bem familiarizado com distribuições baseados em Debian, como, por exemplo<a href="https://ubuntu.com/desktop" target="_blank">Ubuntu/Ubuntu Server</a>/, <a href="https://pop.system76.com/" target="_blank">Pop_Os</a> e <a href="https://linuxmint.com/" target="_blank">Mint</a></p>
                     <p>Isso foi um pouco sobre mim e meu conhecimento profissional, de mais uma olhada para conhecer alguns dos meus projetos</p>
                 </div>
-            </div>
-            <div class="formacao">
-                <h2>Formação:</h2>
                 <div class="texto_formacao">
+                    <h2>Formação:</h2>
                     <ul>
                         <li>Ensino médio completo.</li>
                         <li>Ensino superior completo: Bacharelado Sistemas da Informação.</li>
                         <li>Curso voltado para manutenção de notebooks.</li>
                     </ul>
-                </div>
-                <h2>Técnologias:</h2>
-                <div class="tecnologias_sistemas">
-                    <div class="primeira_linha">
-                        <img src="../static/assets/Flask_logopng.png" alt="" class="flask">
-                        <img src="../static/assets/git.png" alt="" class="git">
-                        <img src="../static/assets/html5.png" alt="" class="html">
-                        <img src="../static/assets/css.png" alt="" class="css">
-                    </div>
-                    <div class="segunda_linha">
-                        <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/python/python-original.svg" alt="" class="python">
-                        <img src="https://camo.githubusercontent.com/5b2a8527be6ce73521cdb521a1033b92ff7b1860f79585f66ec30ea75ab253e4/68747470733a2f2f63646e2e6a7364656c6976722e6e65742f67682f64657669636f6e732f64657669636f6e2f69636f6e732f6c696e75782f6c696e75782d6f726967696e616c2e737667" alt="" class="linux">
-                        <img src="../static/assets/github.png" alt="" class="github_formacao">
-                        <img src="../static/assets/postgresql.png" alt="" class="postgresql">
-                    </div>
+
+                    <h2>Técnologias:</h2>
+                    {% for image in assets %}
+                    <img src="../static/assets/{{ image }}" alt="logo_tec_sis" class="logo_tec_sis">
+                    {% endfor %}
                 </div>
             </div>
         </div>
@@ -56,23 +44,37 @@
             <div class="container_projetos">
                 <div clas="projeto_suporte">
                     <h3>Suporte Balaroti</h3>
-                    <a href="../static/images/menu_home.png" target="_blank"><img src="../static/images/menu_home_reduzido.png" alt="Projeto suporte" class="suporte_balaroti"></a>
-                    <p>Com o objetivo de auxiliar e equipe de suporte, desenvoli este sistema web para automatizar processos manuais como por exemplo procurar programas caídos nos servidores de cada loja ou informações e consultas</p>
+                    <a href="https://github.com/guhzoide/Suporte_Balaroti" target="_blank"><img src="../static/images/menu_home.png" alt="Projeto suporte" class="imagem_projeto"></a>
+                    <p>Com o objetivo de auxiliar e equipe de suporte, desenvolvi este sistema web para automatizar processos manuais como por exemplo procurar programas caídos nos servidores de cada loja ou informações e consultas</p>
+                    <p>(Desenvolvido em Python - Django)</p>
+                </div>
+                <div clas="projeto_mdb">
+                    <h3>Mundo dos Brinquedos</h3>
+                    <a href="https://github.com/guhzoide/mundo_dos_brinquedos" target="_blank"><img src="../static/images/inicio.png" alt="Projeto suporte" class="imagem_projeto"></a>
+                    <p>Projeto desenvolvido para a empresa Mundo dos Brinquedos para divulgar seus serviços</p>
+                    <p>(Desenvolvido em Python - Django)</p>
+                </div>
+                <div clas="projeto_curriculo">
+                    <h3>Currículo</h3>
+                    <a href="https://github.com/guhzoide/corriculo" target="_blank"><img src="../static/images/corriculo.png" alt="Projeto suporte" class="imagem_projeto"></a>
+                    <p>Desenvolvi esse site para divulgar meus conhecimentos e projetos em que já trabalhei</p>
+                    <p>(Desenvolvido em Python - Flask)</p>
                 </div>
                 <div class="projeto_reconhecimento_facil">
                     <h3>Reconhecimento facial</h3>
-                    <a href="../static/images/menu_faceid.png" target="_blank"><img src="../static/images/menu_faceid_mod.png" alt="" class="faceid"></a>
+                    <a href="https://github.com/guhzoide/face_id" target="_blank"><img src="../static/images/menu_faceid.png" alt="" class="imagem_projeto"></a>
                     <p>Este projeto foi desenvolvido através de uma parceria com a Faculdade e a empresa VolksWagen onde surgiu uma necessidade de ter o controle de acesso na sala designada para área de prototipagem dos equipamentos fabricados pela mesma. Com essa demanda foi desenvolvido esse projeto onde é feito o controle de acesso através de reconhecimento facial</p>
+                    <p>(Desenvolvido em Python - Kivy)</p>
                 </div>
             </div>
         </div>
         <hr>
         <footer class="contato">
             <h2>Redes e contatos:</h2>
-            <a href="https://wa.me/5541997590194" target="_blank"><img src="../static/assets/whats_icon.png" alt="" class="whats"></a>
-            <a href="mailto:hugoh.ferreira@gmail.com?subject=Contato através do curriculo online" target="_blank"><img src="../static/assets/gmail.png" alt="" class="gmail"></a>
-            <a href="https://github.com/guhzoide" target="_blank"><img src="../static/assets/github.png" alt="" class="github"></a>
-            <a href="https://www.linkedin.com/in/hugo-ferreira-8943881a2?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app" target="_blank"><img src="../static/assets/linkedin.png" alt="" class="linkedin"></a>
+            <a href="https://wa.me/5541997590194" target="_blank"><img src="../static/footer/whats_icon.png" alt="" class="whats"></a>
+            <a href="mailto:hugoh.ferreira@gmail.com?subject=Contato através do curriculo online" target="_blank"><img src="../static/footer/gmail.png" alt="" class="gmail"></a>
+            <a href="https://github.com/guhzoide" target="_blank"><img src="../static/footer/github.png" alt="" class="github"></a>
+            <a href="https://www.linkedin.com/in/hugo-ferreira-8943881a2?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app" target="_blank"><img src="../static/footer/linkedin.png" alt="" class="linkedin"></a>
         </footer>
     </main>
 </body>
